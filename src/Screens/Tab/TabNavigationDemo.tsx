@@ -1,7 +1,6 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import TabScreen1 from './TabScreen1';
 import TabScreen2 from './TabScreen2';
-import Icon from 'react-native-vector-icons/Ionicons';
 
 export type TabParamsList = {
     TabScreen1: undefined,

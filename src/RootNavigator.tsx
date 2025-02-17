@@ -7,7 +7,7 @@ import TabNavigatorDemo from './Screens/Tab/TabNavigationDemo';
 export type RootStackParamList = {
     Home: undefined,
     StackNavigationDemo : undefined,
-    TabNavigationDemo: undefined,
+    TabNavigatorDemo: undefined,
 }
 // Creating a stack navigatior
 const Stack = createStackNavigator();
