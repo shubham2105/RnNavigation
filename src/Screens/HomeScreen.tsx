@@ -2,9 +2,9 @@ import {StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { RooStackParamList } from '../RootNavigator';
+import { RootStackParamList } from '../RootNavigator';
 
-type HomeScreenNavigationProp = StackNavigationProp<RooStackParamList, 'Home'>
+type HomeScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Home'>
 
 const HomeScreen = () => {
     const navigation = useNavigation<HomeScreenNavigationProp>();
@@ -14,6 +14,9 @@ const HomeScreen = () => {
       <View style={styles.buttonContainer}>
         <TouchableOpacity onPress={()=> navigation.navigate('StackNavigationDemo')} style={styles.button}>
             <Text style={styles.buttonText}>Stack Navigation Demo</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={()=> navigation.navigate('TabNavigatorDemo')} style={styles.button}>
+            <Text style={styles.buttonText}>Tab Navigation Demo</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -35,13 +38,14 @@ const styles = StyleSheet.create({
     },
     buttonContainer:{
         flex:1,
-        flexDirection:'row',
+        flexDirection:'column',
         justifyContent:'center',
         alignItems: 'center',
     },
     button:{
         backgroundColor:'blue',
         borderRadius:5,
+        marginBottom:10,
     },
     buttonText:{
         fontSize:16,
