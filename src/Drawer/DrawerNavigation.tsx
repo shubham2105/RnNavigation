@@ -38,7 +38,7 @@ const DrawerScreen2:React.FC<DrawerScreen2Params> = ({navigation}) =>{
 const DrawerNavigationDemo = () => {
     return(
         <Drawer.Navigator>
-            <Drawer.Screen name="Home" component={HomeScreen} options={{headerShown:false}}/>
+            <Drawer.Screen name="Home" component={HomeScreen}/>
             <Drawer.Screen name="DrawerScreen1" component={DrawerScreen1} options={{headerShown:false}}/>
             <Drawer.Screen name="DrawerScreen2" component={DrawerScreen2} options={{headerShown:false}}/>
         </Drawer.Navigator>
