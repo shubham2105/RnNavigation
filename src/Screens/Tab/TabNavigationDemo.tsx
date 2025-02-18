@@ -12,8 +12,8 @@ const Tab = createBottomTabNavigator<TabParamsList>();
 const TabNavigatorDemo = () =>{
     return(
         <Tab.Navigator screenOptions={{headerShown:false}}>
-            <Tab.Screen name='TabScreen1' component={TabScreen1}/>
-            <Tab.Screen name='TabScreen2' component={TabScreen2}/>
+            <Tab.Screen name="TabScreen1" component={TabScreen1}/>
+            <Tab.Screen name="TabScreen2" component={TabScreen2}/>
         </Tab.Navigator>
     );
 };

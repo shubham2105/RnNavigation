@@ -18,6 +18,9 @@ const HomeScreen = () => {
         <TouchableOpacity onPress={()=> navigation.navigate('TabNavigatorDemo')} style={styles.button}>
             <Text style={styles.buttonText}>Tab Navigation Demo</Text>
         </TouchableOpacity>
+        <TouchableOpacity onPress={()=> navigation.navigate('DrawerNavigationDemo')} style={styles.button}>
+            <Text style={styles.buttonText}>Drawer Navigation Demo</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
